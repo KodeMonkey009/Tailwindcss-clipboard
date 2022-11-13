@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    background-image:url('../images/bg-header-desktop.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+@media(max-width:576px){
+   body{
+    background-image:url('../images/bg-header-moblie.png');
+   }
+}
+
+.container-section{
+    @apply max-w-6xl mx-auto text-center mb-40 px-10 pt-16;
+}
+.footer-link{
+    @apply text-sm text-darkGrayishBlue hover:text-strongCyan duration-100;
+}
+.ficon:hover {
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
+}
